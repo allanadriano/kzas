@@ -1,0 +1,140 @@
+.users {
+
+  .content {
+    color: $white-color;
+    padding-top: 5rem;
+
+    .title {
+      font: {
+        weight: 600;
+        size: 26px;
+      }
+      margin: {
+        bottom: 2rem
+      }
+
+      @media only screen and(max-width: $breakpoint-sm - 1px) {
+        font-size: 22px;
+      }
+
+      span {
+        display: flex;
+        color: $yellow-color;
+        letter-spacing: 28px;
+        font-size: 52px;
+
+        @media only screen and(max-width: $breakpoint-sm - 1px) {
+          font-size: 36px;
+          letter-spacing: 15px;
+        }
+      }
+    }
+
+    .kzadors {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+}
+
+.card {
+  background: $white-color;
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  margin: 1rem;
+  width: 100%;
+  max-width: 30%;
+  text-align: center;
+
+  @media only screen and(max-width: $breakpoint-md - 1px) {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  @media only screen and(max-width: $breakpoint-md - 1px) {
+    margin: {
+      left: auto;
+      right: auto
+    }
+  }
+
+  img {
+
+    &.img-kzador {
+      border-radius: 50%;
+      margin: 25px auto 0px;
+
+      @media only screen and(max-width: $breakpoint-md - 1px) {
+        margin: 20px;
+      }
+
+      @media only screen and(max-width: $breakpoint-xs - 1px) {
+        margin: auto 10px;
+        width: 75px;
+        height: 75px;
+      }
+    }
+  }
+
+  .btn--icon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin-right: 0px;
+    background: $red-medium-color;
+    border-radius: 0px;
+    border-bottom-right-radius: 4px;
+
+    &:hover {
+      background: $red-light-color;
+    }
+  }
+
+  .card-body {
+    width: 100%;
+    padding: 20px 10px;
+
+    @media only screen and(max-width: $breakpoint-md - 1px) {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    @media only screen and(max-width: $breakpoint-xs - 1px) {
+      padding: 10px;
+    }
+
+    h3 {
+      color: $purple-color;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $gray-medium-color;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media only screen and(max-width: $breakpoint-xs - 1px) {
+        margin-bottom: 5px
+      }
+
+      img {
+        margin-right: 8px;
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

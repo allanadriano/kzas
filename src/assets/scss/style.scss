@@ -1,0 +1,17 @@
+@import 'colors';
+@import 'utils';
+@import 'button';
+@import 'input';
+@import 'alert';
+@import 'navbar';
+
+// layout app
+
+@import 'layout/home';
+@import 'layout/users';
+
+body {
+  background: $purple-color;
+  background: linear-gradient(to bottom, $purple-dark-color, $purple-medium-color);
+  min-height: calc(100vh);
+}

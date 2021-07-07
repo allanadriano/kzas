@@ -1,0 +1,65 @@
+label {
+  margin: {
+    top: 8px;
+    bottom: 8px
+  }
+  font: {
+    size: 14px;
+    weight: 700
+  }
+}
+
+.input {
+  display: flex;
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid $gray-light-color;
+  border-radius: 4px;
+  background: $dark-light-color;
+  color: $text-input-color;
+  outline: none;
+  font: {
+    size: 14px;
+    weight: 500
+  }
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:focus {
+    border: 2px solid $gray-medium-color;
+    background: $white-color;
+  }
+
+  &--error {
+    border: 2px solid $red-medium-color;
+    background: $gray-color;
+  }
+
+  &--success {
+    border: 2px solid $green-color;
+    background: $green-light-color;
+  }
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  .row {
+    width: 48%;
+  }
+}
+
+.msg {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 8px;
+  font: {
+    weight: 500;
+    size: 12px;
+  }
+  &--error {
+    color: $red-medium-color;
+  }
+}

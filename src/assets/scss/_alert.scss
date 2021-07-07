@@ -1,0 +1,16 @@
+.alert {
+  color: $white-color;
+  padding: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0px 2px 2px 0px rgba($black-color, 0.16);
+  border-radius: 4px;
+  display: flex;
+
+  &--success {
+    background: $green-color;
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
